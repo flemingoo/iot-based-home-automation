@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\node1_source_code.o"
+--strict --scatter ".\ProNode1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\ProNode1.map" -o .\ProNode1.axf

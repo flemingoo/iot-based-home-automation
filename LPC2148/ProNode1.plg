@@ -1,0 +1,166 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+G:\arm project\nodeCode\ProNode1.uvproj
+Project File Date:  05/05/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(74): warning:  #223-D: function "rxu0" declared implicitly
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(117): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(122): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(141): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(157): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(189): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(204): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(29): warning:  #177-D: variable "temp_received" was declared but never referenced
+node1_source_code.c(30): warning:  #177-D: variable "ldr_received" was declared but never referenced
+node1_source_code.c(31): warning:  #177-D: variable "less" was declared but never referenced
+node1_source_code.c(32): warning:  #177-D: variable "greater" was declared but never referenced
+linking...
+ProNode1.axf: Error: L6218E: Undefined symbol rxu0 (referred from node1_source_code.o).
+Target not created
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(117): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(122): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(141): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(157): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(189): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(204): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(29): warning:  #177-D: variable "temp_received" was declared but never referenced
+node1_source_code.c(30): warning:  #177-D: variable "ldr_received" was declared but never referenced
+node1_source_code.c(31): warning:  #177-D: variable "less" was declared but never referenced
+node1_source_code.c(32): warning:  #177-D: variable "greater" was declared but never referenced
+linking...
+Program Size: Code=14364 RO-data=208 RW-data=32 ZI-data=1256  
+FromELF: creating hex file...
+"ProNode1.axf" - 0 Error(s), 11 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(117): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(122): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(141): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(157): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(189): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(204): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(29): warning:  #177-D: variable "temp_received" was declared but never referenced
+node1_source_code.c(30): warning:  #177-D: variable "ldr_received" was declared but never referenced
+node1_source_code.c(31): warning:  #177-D: variable "less" was declared but never referenced
+node1_source_code.c(32): warning:  #177-D: variable "greater" was declared but never referenced
+linking...
+Program Size: Code=14356 RO-data=208 RW-data=32 ZI-data=1256  
+FromELF: creating hex file...
+"ProNode1.axf" - 0 Error(s), 11 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(117): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(122): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(141): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(157): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(189): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(204): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(29): warning:  #177-D: variable "temp_received" was declared but never referenced
+node1_source_code.c(30): warning:  #177-D: variable "ldr_received" was declared but never referenced
+node1_source_code.c(31): warning:  #177-D: variable "less" was declared but never referenced
+node1_source_code.c(32): warning:  #177-D: variable "greater" was declared but never referenced
+linking...
+Program Size: Code=14356 RO-data=208 RW-data=32 ZI-data=1256  
+FromELF: creating hex file...
+"ProNode1.axf" - 0 Error(s), 11 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(123): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(128): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(142): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(151): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(166): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(189): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(200): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(215): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(40): warning:  #177-D: variable "dataReceived" was declared but never referenced
+linking...
+Program Size: Code=14036 RO-data=208 RW-data=32 ZI-data=1256  
+FromELF: creating hex file...
+"ProNode1.axf" - 0 Error(s), 10 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(124): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(129): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(143): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(152): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(167): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(190): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(219): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(40): warning:  #177-D: variable "dataReceived" was declared but never referenced
+linking...
+Program Size: Code=14224 RO-data=208 RW-data=32 ZI-data=1256  
+FromELF: creating hex file...
+"ProNode1.axf" - 0 Error(s), 10 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(124): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(129): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(143): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(152): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(167): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(190): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(219): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(40): warning:  #177-D: variable "dataReceived" was declared but never referenced
+linking...
+Program Size: Code=14224 RO-data=208 RW-data=32 ZI-data=1256  
+FromELF: creating hex file...
+"ProNode1.axf" - 0 Error(s), 10 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(124): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(129): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(143): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(152): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(167): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(190): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(219): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(40): warning:  #177-D: variable "dataReceived" was declared but never referenced
+linking...
+Program Size: Code=14232 RO-data=208 RW-data=32 ZI-data=1256  
+FromELF: creating hex file...
+"ProNode1.axf" - 0 Error(s), 10 Warning(s).
+Build target 'Target 1'
+assembling Startup.s...
+compiling node1_source_code.c...
+str2int.h(129): warning:  #1-D: last line of file ends without a newline
+node1_source_code.c(128): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(133): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(147): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(156): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(171): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(194): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(205): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(223): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+node1_source_code.c(42): warning:  #177-D: variable "dataReceived" was declared but never referenced
+linking...
+Program Size: Code=14248 RO-data=208 RW-data=32 ZI-data=1256  
+FromELF: creating hex file...
+"ProNode1.axf" - 0 Error(s), 10 Warning(s).
