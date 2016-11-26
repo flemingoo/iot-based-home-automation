@@ -42,19 +42,6 @@ public class SettingsPanel extends MainActivity {
     public static TextView lightTextRoom1;
     public static TextView windowTextRoom1;
 
-    public static SeekBar tempSeekRoom2;
-    public static SeekBar lightSeekRoom2;
-    public static SeekBar windowSeekRoom2;
-    public static TextView tempTextRoom2;
-    public static TextView lightTextRoom2;
-    public static TextView windowTextRoom2;
-
-    public static SeekBar tempSeekRoom3;
-    public static SeekBar lightSeekRoom3;
-    public static SeekBar windowSeekRoom3;
-    public static TextView tempTextRoom3;
-    public static TextView lightTextRoom3;
-    public static TextView windowTextRoom3;
 
     public static final String URL = "http://sh.digitalenginedevelopers.com/postData.php";
 
@@ -90,17 +77,19 @@ public class SettingsPanel extends MainActivity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 tempProgressRoom1 = progress;
                 tempTextRoom1.setText("Value :" + tempProgressRoom1);
-                //Toast.makeText(SettingsPanel.this, "Temperature changed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(SettingsPanel.this, "Temperature changed", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                //Toast.makeText(SettingsPanel.this, "Temperature Start Tracking", Toast.LENGTH_LONG).show();
+                //Toast.makeText(SettingsPanel.this, "Temperature Start Tracking", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                doPostToServer(SettingsPanel.this, "node1", Integer.toString(tempProgressRoom1));
+                doPostToServer(SettingsPanel.this, "node1","hvac",Integer.toString(tempProgressRoom1));
+                Toast.makeText(SettingsPanel.this, "Temperature settings changed", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
@@ -111,22 +100,24 @@ public class SettingsPanel extends MainActivity {
         lightSeekRoom1.setMax(1023);
         lightSeekRoom1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int lightProgressRoom1;
+            InputStream stream = null;
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 lightProgressRoom1 = progress;
                 lightTextRoom1.setText("Value :" + lightProgressRoom1);
-                //Toast.makeText(SettingsPanel.this, "Light changed", Toast.LENGTH_LONG).show();
-            }
+                }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                //Toast.makeText(SettingsPanel.this, "Light Start Tracking", Toast.LENGTH_LONG).show();
-            }
+           
+		    }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                //Toast.makeText(SettingsPanel.this, "Light Start Tracking", Toast.LENGTH_LONG).show();
+                doPostToServer(SettingsPanel.this, "node1","light",Integer.toString(lightProgressRoom1));
+                Toast.makeText(SettingsPanel.this, "Light sensitivity changed", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
@@ -142,66 +133,25 @@ public class SettingsPanel extends MainActivity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 windowProgressRoom1 = progress;
                 windowTextRoom1.setText("Value :" + windowProgressRoom1);
-                //Toast.makeText(SettingsPanel.this, "Window changed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(SettingsPanel.this, "Window changed", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                //Toast.makeText(SettingsPanel.this, "Window Start Tracking", Toast.LENGTH_LONG).show();
+                //Toast.makeText(SettingsPanel.this, "Window Start Tracking", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                //Toast.makeText(SettingsPanel.this, "Window Stop Tracking", Toast.LENGTH_LONG).show();
-            }
-        });
-    }
-
-    public void tempSeekRoom2Method() {
-        tempSeekRoom2 = (SeekBar) findViewById(R.id.seekTempRoom2);
-        tempSeekRoom2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            int tempProgressRoom2;
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                tempProgressRoom2 = progress;
-                //Toast.makeText(SettingsPanel.this, "Temperature changed", Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
+                //Toast.makeText(SettingsPanel.this, "Window Stop Tracking", Toast.LENGTH_SHORT).show();
+                doPostToServer(SettingsPanel.this, "node1","window", Integer.toString(windowProgressRoom1));
+                Toast.makeText(SettingsPanel.this, "Window settings changed", Toast.LENGTH_SHORT).show();
 
             }
         });
     }
 
-    public void tempSeekRoom3Method() {
-        tempSeekRoom3 = (SeekBar) findViewById(R.id.seekTempRoom3);
-        tempSeekRoom3.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            int tempProgressRoom3;
 
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                tempProgressRoom3 = progress;
-                Toast.makeText(SettingsPanel.this, "Temperature changed", Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-    }
 
     public static HttpClient getHTTPClient(Context context) throws GeneralSecurityException, IOException {
         HttpParams params = new BasicHttpParams();
@@ -258,11 +208,11 @@ public class SettingsPanel extends MainActivity {
         }
     }
 
-    public String doPostToServer(Context context, String node, String value) {
+    public String doPostToServer(Context context, String node,String field, String value) {
         String response = "";
         try {
 
-            String text = "node=" + node + "&" + "hvac=" + value;
+            String text = "node=" + node + "&" + field+ "=" + value;
             response = doPost(context, URL, null, text);
         } catch (IOException e) {
             Log.e("Log_Tag", e.getMessage(), e);

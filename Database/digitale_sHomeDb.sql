@@ -8,7 +8,7 @@
 -- PHP Version: 5.4.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET time_zone = "+05:30";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -26,23 +26,23 @@ SET time_zone = "+00:00";
 -- Table structure for table `thresholds_auto`
 --
 
-CREATE TABLE IF NOT EXISTS `thresholds_auto` (
-  `node` varchar(5) NOT NULL,
-  `light` varchar(5) NOT NULL,
-  `hvac` varchar(5) NOT NULL,
-  `window` varchar(5) NOT NULL,
-  `pir` varchar(5) NOT NULL,
-  UNIQUE KEY `node` (`node`)
+CREATE TABLE IF NOT EXISTS thresholds_auto (
+  node varchar(5) NOT NULL,
+  light varchar(5) NOT NULL,
+  hvac varchar(5) NOT NULL,
+  window varchar(5) NOT NULL,
+  UNIQUE KEY node (node)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `thresholds_auto`
 --
 
-INSERT INTO `thresholds_auto` (`node`, `light`, `hvac`, `window`, `pir`) VALUES
-('node1', '611', '254', '869', '456'),
-('node2', '763', '295', '181', '100'),
-('node3', '729', '100', '293', '258');
+INSERT INTO thresholds_auto (node, light, hvac, window) VALUES
+('node1', '611', '254', '869'),
+('node2', '763', '295', '181'),
+('node3', '729', '100', '293');
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
